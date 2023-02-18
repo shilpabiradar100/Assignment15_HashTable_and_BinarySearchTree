@@ -1,6 +1,7 @@
 package binarysearchtree;
 
 public class BinarySearchTree<T extends Comparable<T>> {
+
     BinaryNode<T> root;
 
     /**

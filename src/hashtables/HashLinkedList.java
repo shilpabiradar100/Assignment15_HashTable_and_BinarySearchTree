@@ -33,4 +33,6 @@ public class HashLinkedList {
         newNode.next = head;
         head = newNode;
     }
+
+
 }

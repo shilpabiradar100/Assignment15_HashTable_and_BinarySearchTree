@@ -1,7 +1,6 @@
 package hashtables;
 import java.util.Objects;
 public class HashNode {
-
     String key;
     Integer value;
     HashNode next;
