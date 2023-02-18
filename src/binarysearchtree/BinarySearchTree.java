@@ -2,8 +2,8 @@ package binarysearchtree;
 
 public class BinarySearchTree<T extends Comparable<T>> {
 
-
     BinaryNode<T> root;
+
 
     /**
      * Method to insert a node in binary search tree
@@ -56,5 +56,24 @@ public class BinarySearchTree<T extends Comparable<T>> {
             }
         }
     }
+
+    public int numOfNodes()
+    {
+        return size(root);
+    }
+    /**
+     * Method to count number of nodes in binary search tree
+     * @param root
+     * @return
+     */
+    public int size(BinaryNode<T> root)
+    {
+        if(null == root)
+            return 0;
+        int nodesLeftSubtree = size(root.left);
+        int nodesRightSubtree = size(root.right);
+        return nodesLeftSubtree + nodesRightSubtree + 1;
+    }
+
 
 }
