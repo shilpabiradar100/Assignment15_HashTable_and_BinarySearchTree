@@ -33,6 +33,17 @@ public class BinaryMain {
         int size = searchTree1.numOfNodes();
         System.out.println("Size of the binary search tree is " + size);
 
-    }
+        /**UC3
+         * Search for a node 63 in binary search tree1
+         */
+        if (searchTree1.searchNode(63))
+        {
+            System.out.println("Node found");
+        }
+        else
+        {
+            System.out.println("Node not found");
+        }
 
+    }
 }
