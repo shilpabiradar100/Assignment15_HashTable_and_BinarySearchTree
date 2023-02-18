@@ -1,6 +1,7 @@
 package binarysearchtree;
 
 public class BinaryMain {
+
     public static void main(String args[])
     {
         /**UC1
